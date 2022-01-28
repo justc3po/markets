@@ -1,0 +1,23 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(26, minmax(0, 1fr));
+  font-size: 0.7rem;
+  margin: 0.5rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.01rem 0rem 0.01rem 0.01rem;
+}
+.cellTop {
+  border-style: solid;
+  border-color: black;
+  border-width: 0rem 0.01rem 0rem 0rem;
+  text-align: center;
+}
+
+.cellTop:hover {
+  border-color: lightblue;
+  border-width: 0.2rem;
+}

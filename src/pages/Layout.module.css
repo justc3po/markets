@@ -1,0 +1,35 @@
+/* .wrapper {
+  display: grid;
+  grid-template-columns: repeat(26, minmax(0, 1fr));
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+.cell {
+  border-style: solid;
+  border-color: black;
+  border-width: 0.01rem 0.01rem 0rem 0rem;
+  text-align: center;
+} */
+.layout {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-size: 0.8rem;
+  margin: 6rem 0.5rem 2rem 0.5rem;
+  justify-content: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 0rem 0rem 0rem 0.01rem;
+}
+.emptyLine {
+  background-color: white;
+  height: 2rem;
+  border: black;
+  border-width: 0.01rem 0.01rem 0rem 0.01rem;
+  border-style: solid;
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: repeat(13, 1fr);
+  margin-top: 6rem;
+  width: 100vw;
+}

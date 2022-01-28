@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: gray;
+  position: absolute;
+}
+
+.cell {
+  border-style: solid;
+  border-color: black;
+  border-width: 0.01rem 0.01rem 0rem 0rem;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.input {
+  border-style: solid;
+  border-color: black;
+  border-width: 0.01rem 0.01rem 0rem 0rem;
+  text-align: center;
+}
+
+.green {
+  background-color: rgb(169, 214, 169);
+}
+
+.hand {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+link {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  margin: 2rem 0rem 2rem 2.5rem;
+  font-size: 1rem;
+}
+
+li {
+  margin: 1rem;
+}

@@ -1,0 +1,12 @@
+/* .mainLayout {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+} */
+
+.wrapper {
+  margin-top: 6rem;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(13, 1fr);
+}
