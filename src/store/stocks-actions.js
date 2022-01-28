@@ -5,7 +5,7 @@ export const fetchStockPrice = () => {
     const tickerBase = getState().stocks.tickerBase;
     const fetchingPrice = async (stockTicker) => {
       const response = await fetch(
-        `https://finnhub.io/api/v1/quote?symbol=${stockTicker}&token=c6f5m8qad3idclgq5sug`
+        `https://finnhub.io/api/v1/quote?symbol=${stockTicker}&token=XXX`
       );
       if (!response.ok) throw new Error("1 st stage of fetching failed");
       const data = await response.json();
@@ -107,7 +107,7 @@ export const sendStocksData = () => {
     const uploadDeletedStocksData = async () => {
       console.log("Sending data / sendingData:", sendingData);
       const response = await fetch(
-        "https://create-http-88fc7-default-rtdb.europe-west1.firebasedatabase.app/stocks.json",
+        "https://XXXX.europe-west1.firebasedatabase.app/stocks.json",
         {
           method: "PUT",
           body: JSON.stringify({
@@ -130,7 +130,7 @@ export const fetchStocksDataBase = () => {
   return async (dispatch) => {
     const fetchingData = async () => {
       const response = await fetch(
-        "https://create-http-88fc7-default-rtdb.europe-west1.firebasedatabase.app/stocks.json"
+        "https://XXXX.europe-west1.firebasedatabase.app/stocks.json"
       );
       if (!response.ok)
         throw new Error("1 st stage of fetching from DB failed");
@@ -180,7 +180,7 @@ export const deleteStockFromDB = (ticker) => {
         stocks[3].ticker
       );
       const response = await fetch(
-        `https://create-http-88fc7-default-rtdb.europe-west1.firebasedatabase.app/stocks/stocks/${index}.json`,
+        `https://XXXXX.europe-west1.firebasedatabase.app/stocks/stocks/${index}.json`,
         {
           method: "DELETE",
         }
@@ -191,7 +191,7 @@ export const deleteStockFromDB = (ticker) => {
     const uploadDeletedStocksData = async () => {
       console.log("Sending Deleted Stocks data / sendingData:", sendingData);
       const response = await fetch(
-        "https://create-http-88fc7-default-rtdb.europe-west1.firebasedatabase.app/stocksDeleted.json",
+        "https://XXXX.europe-west1.firebasedatabase.app/stocksDeleted.json",
         {
           method: "PUT",
           body: JSON.stringify({
@@ -220,7 +220,7 @@ export const fetchOnly1StockPrice = (ticker) => {
   return async (dispatch) => {
     const fetchingPrice = async (stockTicker) => {
       const response = await fetch(
-        `https://finnhub.io/api/v1/quote?symbol=${stockTicker}&token=c6f5m8qad3idclgq5sug`
+        `https://finnhub.io/api/v1/quote?symbol=${stockTicker}&token=XXXX`
       );
       if (!response.ok) throw new Error("1 st stage of fetching failed");
       const data = await response.json();
